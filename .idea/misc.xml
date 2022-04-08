@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg_white_rounded.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/drawable/ic_heart.xml" value="0.24256410256410257" />
         <entry key="app/src/main/res/drawable/ic_heart_active.xml" value="0.24256410256410257" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.25" />

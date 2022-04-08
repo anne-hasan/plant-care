@@ -24,8 +24,9 @@ class MainActivity : AppCompatActivity() {
         val data = ArrayList<Plant>()
 
         data.add(Plant("Monstera", "Indoor", R.drawable.monstera))
-        data.add(Plant("Sansivera", "Indoor", R.drawable.sansivera))
         data.add(Plant("Echeveria", "Outdoor", R.drawable.echeveria))
+        data.add(Plant("Sansivera", "Indoor", R.drawable.sansivera))
+        data.add(Plant("Fiddle Fig", "Outdoor", R.drawable.fiddle_fig))
         data.add(Plant("Gardenia", "Outdoor", R.drawable.gardenia))
         data.add(Plant("Palm", "Outdoor", R.drawable.palm))
 

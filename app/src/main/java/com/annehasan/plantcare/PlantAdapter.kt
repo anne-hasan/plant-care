@@ -1,11 +1,13 @@
 package com.annehasan.plantcare
 
+import android.content.Intent
 import com.annehasan.plantcare.Plant
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(private val mList: List<Plant>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
@@ -21,7 +23,7 @@ class CustomAdapter(private val mList: List<Plant>) : RecyclerView.Adapter<Custo
     }
 
     // Holds the views for adding it to image and text
-    class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
+    class ViewHolder(ItemView: View, onItemClicked: (Int) -> Unit) : RecyclerView.ViewHolder(ItemView) {
         val image: ImageView = itemView.findViewById(R.id.image)
         val title: TextView = itemView.findViewById(R.id.title)
         val subtitle: TextView = itemView.findViewById(R.id.subtitle)
@@ -31,7 +33,6 @@ class CustomAdapter(private val mList: List<Plant>) : RecyclerView.Adapter<Custo
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val Plant = mList[position]
-
         holder.image.setImageResource(Plant.image)
         holder.title.text = Plant.name
         holder.subtitle.text = Plant.type
